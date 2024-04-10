@@ -18,32 +18,6 @@ registration:
 
 endpoints:
   custom:
-    # Google Beta AI API
-    - name: "Google Beta"  # Unique name for the endpoint
-      # For `apiKey` and `baseURL`, you can use environment variables that you define.
-      # recommended environment variables:
-      apiKey: "${GOOGLE_BETA_API_KEY}"
-      baseURL: "https://generativelanguage.googleapis.com/v1beta"
-
-      # Models configuration
-      models: 
-        # List of default models to use. At least one value is required.
-        default: ["gemini-1.5-pro-latest"]
-        # Fetch option: Set to true to fetch models from API.
-        fetch: true  # Defaults to false.
-
-      # Optional configurations 
-      # Title Conversation setting
-      titleConvo: true  # Set to true to enable title conversation
-      # Title Method: Choose between "completion" or "functions".
-      titleMethod: "completion"  # Defaults to "completion" if omitted.
-      # Summarize setting: Set to true to enable summarization.
-      summarize: false
-      # Force Prompt setting: If true, sends a `prompt` parameter instead of `messages`.
-      forcePrompt: false
-      # The label displayed for the AI model in messages.
-      modelDisplayLabel: "Google Beta"  # Default is "AI" when not set.
-
     # groq
     - name: "groq"
       apiKey: "${GROQ_API_KEY}"
