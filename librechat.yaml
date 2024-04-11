@@ -152,6 +152,7 @@ endpoints:
       baseURL: "https://api.together.xyz"
       models:
         default: [
+          "mistralai/Mixtral-8x22B",
           "zero-one-ai/Yi-34B-Chat",
           "Austism/chronos-hermes-13b",
           "DiscoResearch/DiscoLM-mixtral-8x7b-v2",
