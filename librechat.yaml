@@ -91,6 +91,16 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "Anyscale"
 
+    - name: "Deepseek"
+      apiKey: "${DEEPSEEK_API_KEY}"
+      baseURL: "https://api.deepseek.com/v1"
+      models:
+        default: ["deepseek-chat", "deepseek-coder", "deepseek-reasoner"]
+        fetch: false
+      titleConvo: true
+      titleModel: "deepseek-chat"
+      modelDisplayLabel: "Deepseek"
+
     # Fireworks
     - name: "Fireworks"
       apiKey: "${FIREWORKS_API_KEY}"
