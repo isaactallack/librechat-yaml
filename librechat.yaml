@@ -25,15 +25,7 @@ registration:
     - openid
 endpoints:
   openAI:
-    streamRate: 25
-    titleModel: gpt-5-nano
-    titleMethod: completion
-    titlePrompt: |-
-        Analyze this conversation and provide a concise title in the
-        detected language (5 words or less, no punctuation or quotation)
-
-
-        {convo}
+    titleEndpoint: google
   custom:
     - name: xai
       apiKey: ${XAI_API_KEY}
@@ -44,8 +36,4 @@ endpoints:
           - grok-4-0709
           - grok-3-latest
         fetch: false
-      titleConvo: true
-      titleMethod: "completion"
-      titleModel: "grok-3-latest"
-      modelDisplayLabel: "Grok"
-      dropParams: ["presencePenalty", "frequencyPenalty"]
+      titletitleEndpoint: google
