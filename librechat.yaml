@@ -26,7 +26,7 @@ registration:
 endpoints:
   openAI:
     titleConvo: true
-    titleModel: gpt-5-nano
+    titleModel: gpt-4o-mini
   custom:
     - name: xai
       apiKey: ${XAI_API_KEY}
