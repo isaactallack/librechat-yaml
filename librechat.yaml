@@ -54,5 +54,6 @@ endpoints:
         {convo}
       summarize: false
       summaryModel: grok-3-mini
+      dropParams: ["presencePenalty", "frequencyPenalty"]
       forcePrompt: false
       modelDisplayLabel: Grok
