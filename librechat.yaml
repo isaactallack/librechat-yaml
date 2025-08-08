@@ -25,6 +25,7 @@ registration:
     - openid
 endpoints:
   openAI:
+    titleConvo: true
     titleModel: gpt-5-nano
   custom:
     - name: xai
