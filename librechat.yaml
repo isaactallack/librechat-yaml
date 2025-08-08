@@ -27,6 +27,7 @@ endpoints:
   openAI:
     titleConvo: true
     titleEndpoint: google
+    titleModel: gemini-2.5-flash
   custom:
     - name: xai
       apiKey: ${XAI_API_KEY}
