@@ -26,6 +26,7 @@ registration:
 endpoints:
   openAI:
     titleEndpoint: google
+    titleConvo: true
   custom:
     - name: xai
       apiKey: ${XAI_API_KEY}
@@ -37,3 +38,5 @@ endpoints:
           - grok-3-latest
         fetch: false
       titletitleEndpoint: google
+      titleConvo: true
+      modelDisplayLabel: "Grok"
