@@ -34,7 +34,7 @@ endpoints:
         default: ["grok-3-mini", "grok-4-0709"]
         fetch: false
       titleConvo: true
-      titleMethod: "functions"
+      titleMethod: "completion"
       titleModel: "grok-3-mini"
       summarize: false
       summaryModel: "grok-3-mini"
