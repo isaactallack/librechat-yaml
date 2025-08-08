@@ -25,6 +25,7 @@ registration:
     - openid
 endpoints:
   openAI:
+    titleConvo: true
     titleEndpoint: google
   custom:
     - name: xai
