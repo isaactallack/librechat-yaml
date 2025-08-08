@@ -1,53 +1,56 @@
+---
 version: 1.0.5
-
 cache: true
-
 memory:
-  disabled: false  # Set to true to completely disable memory
-  personalize: true  # Gives users the ability to toggle memory on/off, true by default
-  tokenLimit: 2000  # Maximum tokens for memory storage
-  messageWindowSize: 5  # Number of recent messages to consider
+  disabled: false
+  personalize: true
+  tokenLimit: 2000
+  messageWindowSize: 5
   agent:
-    provider: "google"
-    model: "gemini-2.5-flash"
-
+    provider: google
+    model: gemini-2.5-flash
 interface:
-  # Privacy policy settings
   privacyPolicy:
-    externalUrl: 'https://librechat.ai/privacy-policy'
+    externalUrl: https://librechat.ai/privacy-policy
     openNewTab: true
-
-  # Terms of service
   termsOfService:
-    externalUrl: 'https://librechat.ai/tos'
+    externalUrl: https://librechat.ai/tos
     openNewTab: true
-
 registration:
-  socialLogins: ["discord", "facebook", "github", "google", "openid"]
-
+  socialLogins:
+    - discord
+    - facebook
+    - github
+    - google
+    - openid
 endpoints:
   openAI:
     streamRate: 25
-    titleModel: "gpt-5-mini"
-    titleMethod: "completion"
-    titlePrompt: "Create a concise title for this conversation:\n\n{convo}"
+    titleModel: gpt-5-mini
+    titleMethod: completion
+    titlePrompt: |-
+      Create a concise title for this conversation:
 
+      {convo}
   custom:
-    - name: "xai"
-      apiKey: "${XAI_API_KEY}"
-      baseURL: "https://api.x.ai/v1"
+    - name: xai
+      apiKey: ${XAI_API_KEY}
+      baseURL: https://api.x.ai/v1
       models:
-        default: ["grok-3-mini", "grok-4-0709"]
+        default:
+          - grok-3-mini
+          - grok-4-0709
         fetch: false
       titleConvo: true
-      titleMethod: "completion"
-      titleModel: "grok-3-mini"
-      titlePrompt: |
-      Analyze this conversation and provide a concise title in the detected language (5 words or less, no punctuation or quotation)
-      
-      {convo}
+      titleMethod: completion
+      titleModel: grok-3-mini
+      titlePrompt: >-
+        Analyze this conversation and provide a concise title in the
+        detected language (5 words or less, no punctuation or quotation)
+
+
+        {convo}
       summarize: false
-      summaryModel: "grok-3-mini"
+      summaryModel: grok-3-mini
       forcePrompt: false
-      modelDisplayLabel: "Grok"
-     
+      modelDisplayLabel: Grok
