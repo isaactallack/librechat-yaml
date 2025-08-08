@@ -24,6 +24,8 @@ registration:
     - google
     - openid
 endpoints:
+  openAI:
+    titleEndpoint: google
   custom:
     - name: xai
       apiKey: ${XAI_API_KEY}
@@ -33,7 +35,11 @@ endpoints:
           - grok-3-mini
           - grok-4-0709
           - grok-3-latest
+          - grok-2-1212
         fetch: false
-      titletitleEndpoint: google
       titleConvo: true
-      modelDisplayLabel: "Grok"
+      titleModel: grok-2-1212
+      modelDisplayLabel: Grok
+      dropParams:
+        - presencePenalty
+        - frequencyPenalty
