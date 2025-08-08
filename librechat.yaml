@@ -24,6 +24,8 @@ registration:
     - google
     - openid
 endpoints:
+  openAI:
+    titleModel: gpt-5-nano
   custom:
     - name: xai
       apiKey: ${XAI_API_KEY}
