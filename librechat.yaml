@@ -26,6 +26,12 @@ registration:
   socialLogins: ["discord", "facebook", "github", "google", "openid"]
 
 endpoints:
+  openAI:
+    streamRate: 25
+    titleModel: "gpt-5-mini"
+    titleMethod: "completion"
+    titlePrompt: "Create a concise title for this conversation:\n\n{convo}"
+
   custom:
     - name: "xai"
       apiKey: "${XAI_API_KEY}"
