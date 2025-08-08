@@ -36,6 +36,10 @@ endpoints:
       titleConvo: true
       titleMethod: "completion"
       titleModel: "grok-3-mini"
+      titlePrompt: |
+      Analyze this conversation and provide a concise title in the detected language (5 words or less, no punctuation or quotation)
+      
+      {convo}
       summarize: false
       summaryModel: "grok-3-mini"
       forcePrompt: false
