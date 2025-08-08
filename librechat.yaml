@@ -24,9 +24,6 @@ registration:
     - google
     - openid
 endpoints:
-  openAI:
-    titleEndpoint: google
-    titleConvo: true
   custom:
     - name: xai
       apiKey: ${XAI_API_KEY}
