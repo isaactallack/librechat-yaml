@@ -37,6 +37,7 @@ endpoints:
           - grok-4-0709
           - grok-3-latest
           - grok-2-1212
+          - grok-code-fast-1
         fetch: false
       titleConvo: true
       titleModel: grok-2-1212
